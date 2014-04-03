@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
 
 /*section header - t ex Malmö, På Ladet, Melodifestivalen etc*/
 #section_header
