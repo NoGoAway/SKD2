@@ -6,6 +6,11 @@
     width: extend-to-zoom;
 }
 
+img, video, canvas
+{
+max-width:100%;
+}
+
 /*section header - t ex Malmö, På Ladet, Melodifestivalen etc*/
 #section_header
 {
