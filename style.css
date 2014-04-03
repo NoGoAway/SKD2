@@ -1,3 +1,193 @@
-body {
-border: 2px solid red;
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*section header - t ex Malmö, På Ladet, Melodifestivalen etc*/
+#section_header
+{
+text-align:center;
+color:#FFF;
+font-size: 14px;
+font-weight: bold;
+border-bottom-width: 1px;
+padding-top: 0.3em;
+padding-right-value: 0.3em;
+padding-bottom: 0.3em;
+padding-left-value: 0.3em;
+background: -moz-linear-gradient(center top , #99BEDE, #7CA1C2) repeat scroll 0% 0% #8AAFD3;
+background-color: #8AAFD3;
+background-image: -moz-linear-gradient(center top , #99BEDE, #7CA1C2);
+background-repeat: repeat;
+background-attachment: scroll;
+background-position: 0% 0%;
+background-clip: border-box;
+background-origin: padding-box;
+background-size: auto auto;
+text-shadow: 0px 1px 1px #3E6790;
+}
+
+/*article image - inställningar för artikelbild*/
+#article_image
+{
+width:100%;
+border: 0px;
+}
+
+#image_byline
+{
+font: 80% Arial;
+font-family: Arial;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+font-size: 80%;
+line-height: normal;
+font-size-adjust: none;
+font-stretch: normal;
+-x-system-font: none;
+-moz-font-feature-settings: normal;
+-moz-font-language-override: normal;
+text-shadow: 0px 1px 0px #FFF;
+color: #333;
+}
+
+#image_byline.description
+{
+text-align:left;	
+}
+
+#image_byline.photographer
+{
+text-align:right;
+color: #888;	
+}
+/*end article image*/
+
+/*begin intro*/
+#article_title
+{
+font-family: Arial;
+font-style: normal;
+font-variant: normal;
+font-weight: bold;
+font-size: 160%;
+line-height: normal;
+font-size-adjust: none;
+font-stretch: normal;
+-x-system-font: none;
+-moz-font-feature-settings: normal;
+-moz-font-language-override: normal;
+margin-top: 0.5em;
+margin-right-value: 0px;
+margin-bottom: 0.5em;
+margin-left-value: 0px;
+margin-left-ltr-source: physical;
+margin-left-rtl-source: physical;
+margin-right-ltr-source: physical;
+margin-right-rtl-source: physical;
+color: #333;
+text-shadow: 0px 1px 0px #FFF;	
+}
+
+#article_byline
+{
+font-family: Helvetica,Arial,sans-serif;
+border-bottom-width: 0.2em;
+border-bottom-style: solid;
+border-bottom-color: #CCC;
+clear: both;
+padding-top: 0.3em;
+padding-right-value: 0px;
+padding-bottom: 0.3em;
+padding-left-value: 0px;
+padding-left-ltr-source: physical;
+padding-left-rtl-source: physical;
+padding-right-ltr-source: physical;
+padding-right-rtl-source: physical	
+border-top-width: 0.2em;
+border-top-style: solid;
+border-top-color: #CCC;
+}
+
+
+#published_date
+{
+font-family: Helvetica,Arial,sans-serif;
+border-bottom-width: 0.2em;
+border-bottom-style: solid;
+border-bottom-color: #CCC;
+clear: both;
+padding-top: 0.3em;
+padding-right-value: 0px;
+padding-bottom: 0.3em;
+padding-left-value: 0px;
+padding-left-ltr-source: physical;
+padding-left-rtl-source: physical;
+padding-right-ltr-source: physical;
+padding-right-rtl-source: physical	
+border-top-width: 0.2em;
+border-top-style: solid;
+border-top-color: #CCC;	
+}
+
+/*begin ingress*/
+#ingress_text
+{
+font-family: Arial;
+font-style: normal;
+font-variant: normal;
+font-weight: bold;
+font-size: 100%;
+line-height: normal;
+font-size-adjust: none;
+font-stretch: normal;
+-x-system-font: none;
+-moz-font-feature-settings: normal;
+-moz-font-language-override: normal;
+color: #333;
+text-shadow: 0px 1px 0px #FFF;	
+}
+
+#ingress_subject
+{
+font-family: Arial;
+font-style: normal;
+font-variant: normal;
+font-weight: bold;
+font-size: 100%;
+line-height: normal;
+font-size-adjust: none;
+font-stretch: normal;
+-x-system-font: none;
+-moz-font-feature-settings: normal;
+-moz-font-language-override: normal;
+color: #069;
+text-shadow: 0px 1px 0px #FFF;
+text-transform:uppercase;
+}
+/*end ingress*/
+/*end intro*/
+
+#share_top
+{
+	
+}
+
+
+#article_text
+{
+font-family: Helvetica,Arial,sans-serif;
+color: #333;	
+}
+
+#share_bottom
+{
+
+}
+/*end article*/
+
+/*begin comments*/
+#comments
+{
+	
 }
