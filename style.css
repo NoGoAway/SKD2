@@ -192,6 +192,23 @@ color: #333;
 {
 
 }
+
+.article .dateline {
+    color: #069;
+    
+.article .summary {
+    font: bold 100% Arial;
+        font-family: Arial;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 100%;
+        line-height: normal;
+        font-size-adjust: none;
+        font-stretch: normal;
+        -x-system-font: none;
+        -moz-font-feature-settings: normal;
+        -moz-font-language-override: normal;
 /*end article*/
 
 /*begin comments*/
