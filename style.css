@@ -101,7 +101,9 @@ text-shadow: 0px 1px 0px #FFF;
 #article_byline
 {
 font-family: Helvetica,Arial,sans-serif;
-
+border-bottom-width: 0.2em;
+border-bottom-style: solid;
+border-bottom-color: #CCC;
 clear: both;
 padding-top: 0.3em;
 padding-right-value: 0px;
