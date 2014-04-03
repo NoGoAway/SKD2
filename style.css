@@ -116,7 +116,6 @@ padding-right-rtl-source: physical
 border-top-width: 0.2em;
 border-top-style: solid;
 border-top-color: #CCC;
-font-size:80%;
 }
 
 
@@ -135,8 +134,6 @@ padding-left-ltr-source: physical;
 padding-left-rtl-source: physical;
 padding-right-ltr-source: physical;
 padding-right-rtl-source: physical	
-
-font-size:80%;
 }
 
 /*begin ingress*/
