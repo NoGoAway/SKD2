@@ -121,6 +121,11 @@ border-top-color: #CCC;
 }
 
 
+#article_byline p 
+{
+color: #708090;	
+}
+}
 #published_date
 {
 font-family: Helvetica,Arial,sans-serif;
