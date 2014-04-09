@@ -116,13 +116,12 @@ padding-right-rtl-source: physical
 border-top-width: 0.2em;
 border-top-style: solid;
 border-top-color: #CCC;
-font-size: 50%;
 }
 
 
 #published_date
 {
-font-family: Helvetica,Arial,sans-serif;
+font-family: 50% Helvetica,Arial,sans-serif;
 border-bottom-width: 0.1em;
 border-bottom-style: solid;
 border-bottom-color: #CCC;
