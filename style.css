@@ -176,8 +176,9 @@ text-transform:uppercase;
 /*end ingress*/
 /*end intro*/
 
-#share_top
+#share_box_top
 {
+text-align:center;
 float: center;	
 }
 
