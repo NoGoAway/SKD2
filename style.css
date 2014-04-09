@@ -102,6 +102,7 @@ text-shadow: 0px 1px 0px #FFF;
 {
 font-family: Helvetica,Arial,sans-serif;
 font-size: 80%;
+font-color: #708090;
 border-bottom-width: 0.0em;
 border-bottom-style: solid;
 border-bottom-color: #CCC;
@@ -124,6 +125,7 @@ border-top-color: #CCC;
 {
 font-family: Helvetica,Arial,sans-serif;
 font-size: 80%;
+font-color: #708090;
 border-bottom-width: 0.3em;
 border-bottom-style: solid;
 border-bottom-color: #CCC;
