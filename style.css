@@ -101,7 +101,7 @@ text-shadow: 0px 1px 0px #FFF;
 #article_byline
 {
 font-family: Helvetica,Arial,sans-serif;
-border-bottom-width: 0.1em;
+border-bottom-width: 0.3em;
 border-bottom-style: solid;
 border-bottom-color: #CCC;
 clear: both;
@@ -113,7 +113,7 @@ padding-left-ltr-source: physical;
 padding-left-rtl-source: physical;
 padding-right-ltr-source: physical;
 padding-right-rtl-source: physical	
-border-top-width: 0.1em;
+border-top-width: 0.3em;
 border-top-style: solid;
 border-top-color: #CCC;
 }
@@ -122,7 +122,7 @@ border-top-color: #CCC;
 #published_date
 {
 font-family: Helvetica,Arial,sans-serif;
-border-bottom-width: 0.1em;
+border-bottom-width: 0.3em;
 border-bottom-style: solid;
 border-bottom-color: #CCC;
 clear: both;
@@ -134,7 +134,6 @@ padding-left-ltr-source: physical;
 padding-left-rtl-source: physical;
 padding-right-ltr-source: physical;
 padding-right-rtl-source: physical;
-border-top-width: 0.1em;
 }
 
 /*begin ingress*/
