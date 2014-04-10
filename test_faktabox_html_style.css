@@ -167,6 +167,22 @@ font-family: Helvetica,Arial,sans-serif;
 color: #333;	
 }
 
+#article_content {
+    border: 1px solid #333;
+    overflow:hidden;
+}
+
+#faktabox {
+    border: 1px solid #333;
+    clear: none;
+    width: 130px;
+    float:right;
+}
+
+#article_text {
+    border: 1px solid #333;
+}
+
 #share_box_bottom {
     text-align: center;
     font-family: Helvetica,Arial,sans-serif;
