@@ -184,8 +184,10 @@ color: #333;
     border: 1px solid #333;
 }
 
-#article_text {
+#article_text p {
     word-break:break-all;
+    text-overflow:clip;
+    word-wrap:break-word;
 }
 
 #share_box_bottom {
