@@ -170,7 +170,7 @@ color: #333;
 #article_content {
     border: 1px solid #333;
     overflow:hidden;
-    word-wrap:break-word;
+    
 }
 
 #faktabox {
@@ -182,6 +182,10 @@ color: #333;
 
 #article_text {
     border: 1px solid #333;
+}
+
+#article_text.p {
+    word-wrap:break-word;
 }
 
 #share_box_bottom {
