@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft="10sp" 
+        android:paddingRight="10sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingTop="2sp"
+        >
+        
+        
+        <TextView android:layout_height="wrap_content"
+                android:layout_width="fill_parent" 
+                android:id="@+id/tvTitle"
+                android:text="Title" android:typeface="sans" 
+                android:textSize="16sp" 
+                android:textStyle="bold">
+            
+            
+        </TextView>
+        
+   
+        
+        15 16 17 22 
+        
+          
+        <LinearLayout 
+            android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                
+                  <TextView 
+                      android:id="@+id/TextView01" 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" 
+                  android:textStyle="bold"
+                   android:text="Beskrivning:  " 
+                   android:textSize="13sp">
+                   </TextView> 
+                   
+                <TextView 
+                    android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:text="Desc"
+                        android:id="@+id/tvDesc" 
+                        android:textSize="13sp"></TextView>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/LinearLayout03"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView 
+                    android:id="@+id/TextView01" 
+                    android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:textStyle="bold"
+                        android:text="" 
+                        android:textSize="13sp"></TextView>
+                <TextView 
+                    android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:text="Link"
+                        android:id="@+id/tvLink" 
+                        android:textSize="13sp" 
+                        android:layout_weight="1" 
+                        android:visibility="invisible"
+                        android:layout_marginTop="-50dp">
+                        
+                    
+                  </TextView>
+                  </LinearLayout>
+                  
+                <LinearLayout
+                     android:id="@+id/LinearLayout04"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                 
+                  
+                <TextView 
+                    android:id="@+id/TextView01" 
+                    android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:textStyle="bold"
+                        android:text="Publicerades:  " 
+                        android:textSize="13sp"></TextView>
+                <TextView 
+                    android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:text="Date"
+                        android:id="@+id/tvDate" 
+                        android:textSize="13sp" 
+                        android:layout_weight="1"
+                        >
+                        
+                </TextView>
+                
+                </LinearLayout>
+                
+                
+                
+                
+                
+                
+                
+            <!--           <Button android:layout_width="wrap_content" 
+                            android:id="@+id/btnRemove" 
+                            android:text="Remove" 
+                            android:layout_height="40dip"></Button> -->
+        </LinearLayout> 
+
+
+
