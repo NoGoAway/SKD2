@@ -3,18 +3,23 @@ package se.skanskan.mittskanskan;
 import java.util.List;
 
 import android.content.Context;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class RSSAdapter extends BaseAdapter implements OnClickListener {
     private Context context;
    
-
+    String categorySport = "SPORT";
+    String categoryOpinion = "OPINION";
+    
     private List<Rssitem> listRssItems;
 
     public RSSAdapter(Context context, List<Rssitem> listRssItems) {
@@ -52,9 +57,34 @@ public class RSSAdapter extends BaseAdapter implements OnClickListener {
 
         TextView tvDesc = (TextView) convertView.findViewById(R.id.tvDesc);
         tvDesc.setText(entry.getDesc());
+        
+        
+        TextView tvDate = (TextView) convertView.findViewById(R.id.tvDate);
+        tvDate.setText(entry.getDate());
 
         TextView tvLink = (TextView) convertView.findViewById(R.id.tvLink);
         tvLink.setText(entry.getLink());
+        tvLink.setBackgroundResource(android.R.color.white);
+        
+        
+        LinearLayout ly1 = (LinearLayout) convertView.findViewById(R.id.LinearLayout01);
+        ly1.setBackgroundResource(android.R.color.darker_gray);
+        
+        
+        // Kollar om länken innehåller "sport" och ändrar isf parent till txtviewn.
+        
+        if (tvLink.getText().toString().contains(categorySport))
+		{
+        	View parent = (View) tvTitle.getParent();
+			parent.setBackgroundResource(android.R.color.holo_blue_light);
+		}
+        
+        if (tvLink.getText().toString().contains(categoryOpinion))
+        {
+        	View parent = (View) tvTitle.getParent();
+        	parent.setBackgroundResource(android.R.color.holo_orange_light);
+        }
+        
 
         // Set the onClick Listener on this button
 //        Button btnRemove = (Button) convertView.findViewById(R.id.btnRemove);
@@ -73,6 +103,8 @@ public class RSSAdapter extends BaseAdapter implements OnClickListener {
 
         return convertView;
     }
+    
+     
 
     @Override
     public void onClick(View view) 

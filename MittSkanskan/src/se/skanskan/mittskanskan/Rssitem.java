@@ -5,6 +5,7 @@ public class Rssitem
     private String title = null;
     private String description = null;
     private String link = null;
+    private String date = null;
     
    
 
@@ -13,12 +14,13 @@ public class Rssitem
     	
     }
     
-    public Rssitem(String title, String description, String link)
+    public Rssitem(String title, String description, String link, String date)
     {
         super();
         this.title = title;
         this.description = description;
         this.link = link;
+        this.date = date;
     }
 
 
@@ -50,6 +52,11 @@ public class Rssitem
     public String getDesc()
     {
     	return description;
+    }
+    
+    public String getDate()
+    {
+    	return date;
     }
     }
 
