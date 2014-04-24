@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    android:padding="10dp" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    	<TextView android:layout_height="wrap_content" 
+    	    android:layout_width="wrap_content" 
+    	    android:paddingLeft="25dp" 
+    	    android:layout_centerVertical="true" 
+    	    android:layout_alignParentLeft="true" 
+    	    android:id="@+id/settings_group"/>
+				<CheckBox 
+				    android:layout_height="wrap_content" 
+				    android:layout_width="wrap_content" 
+				    android:id="@+id/settings_item_subscribe" 
+				    android:text="" 
+				    android:layout_alignParentRight="true"/>
+</RelativeLayout>

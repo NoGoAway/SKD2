@@ -22,7 +22,7 @@
         
    
         
-        15 16 17 22 
+        
         
           
         <LinearLayout 
@@ -96,17 +96,7 @@
                 </TextView>
                 
                 </LinearLayout>
-                
-                
-                
-                
-                
-                
-                
-            <!--           <Button android:layout_width="wrap_content" 
-                            android:id="@+id/btnRemove" 
-                            android:text="Remove" 
-                            android:layout_height="40dip"></Button> -->
+
         </LinearLayout> 
 
 
