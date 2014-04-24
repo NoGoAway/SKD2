@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -13,13 +15,17 @@ import org.w3c.dom.NodeList;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity  {
 
 	RSSReader rssfeed = new RSSReader();
 
@@ -35,6 +41,20 @@ public class MainActivity extends Activity {
 	String feedDate;
 	SimpleDateFormat df = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss",
 			Locale.getDefault());
+	
+	// Import från settingsactivity
+	
+	List<String> groupList;
+    List<String> childList;
+    Map<String, List<String>> groupCollection;
+    ExpandableListView expListView;
+
+
+    
+  // ... till hit
+	
+	
+	
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -67,6 +87,9 @@ public class MainActivity extends Activity {
 			
 			
 		}
+		
+		
+		
 		
 
 		Collections.sort(rsslist, new Comparator<Rssitem>() {
@@ -102,6 +125,38 @@ public class MainActivity extends Activity {
 
 		list.setAdapter(adapter);
 	}
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    // Inflate the menu items for use in the action bar
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.main, menu);
+	    return super.onCreateOptionsMenu(menu);
+	}
+	
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item){
+		        // same as using a normal menu
+		        switch(item.getItemId()) {
+		        case R.id.action_test:
+		            showToast("Refreshing...");
+		            break;
+		        case R.id.action_settings:
+		          
+		        	Intent myIntent = new Intent(this, SettingsActivity.class);
+		        	startActivity(myIntent);
+		        	
+		        	
+		            break;
+		        }
+		        
+		        return true;
+	        }
+	
+	
+	
 
 	private void showToast(String message) {
 		Toast.makeText(this, message, Toast.LENGTH_LONG).show();
