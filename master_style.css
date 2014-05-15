@@ -39,7 +39,7 @@ h1#artikel_title { }
  /* shares box */ 
 /**************/ 
 #shares { overflow:hidden; border-top: 1dp; border-bottom: 1dp; }
-#shares_text span { font-size: 0.75em; }
+#shares_text span { font-size: 0.75em; display: block;}
 #shares_facebook { float: left; }
 .share_facebook_button { border: 1px solid #ccc; background-color: blue; color: white; }
 #shares_twitter { float: left;}
@@ -53,7 +53,7 @@ h1#artikel_title { }
  /* innehåll */
 /************/ 
 #content { }
-#faktabox { }
+#faktabox { float: right; width: 33%; }
 h2#faktaHeader { font-size: 1em; }
 #faktaImg { }
 #faktaImg img { }
