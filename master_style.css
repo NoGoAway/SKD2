@@ -1,0 +1,81 @@
+body { }
+#nav { }
+
+
+
+  /**********/ 
+ /* annons */ 
+/**********/
+ 
+#annons { overflow:hidden; }
+#annons_disclosure { }
+#annons_box { }
+
+
+
+  /*****************/ 
+ /* första bilden */
+/*****************/ 
+#top_media { overflow:hidden;  }
+#top_media_img { }
+#top_media_img_box { }
+#top_media_img_box img { }
+#top_media_img_byline { }
+#top_media_video { }
+#top_media_video_box { }
+
+
+  /******************/ 
+ /* artikel ingres */
+/******************/ 
+#artikel_intro { overflow:hidden;  }
+h1#artikel_title { }
+#artikel_byline { float:left; }
+#artikel_datum { float:left; }
+#artikel_kategori { }
+
+
+  /**************/ 
+ /* shares box */ 
+/**************/ 
+#shares { overflow:hidden; border-top: 1dp; border-bottom: 1dp; }
+#shares_text span { font-size: 0.75em; }
+#shares_facebook { float: left; }
+.share_facebook_button { border: 1px solid #ccc; background-color: blue; color: white; }
+#shares_twitter { float: left;}
+.share_twitter_button { border: 1px solid #ccc; background-color: green; color: white; }
+#shares_googleplus { float: left; }
+.share_gplus_button { border: 1px solid #ccc; background-color: red; color: white; }
+
+
+
+  /************/
+ /* innehåll */
+/************/ 
+#content { }
+#faktabox { }
+h2#faktaHeader { font-size: 1em; }
+#faktaImg { }
+#faktaImg img { }
+#faktaText { }
+#artikel { }
+#artikel p { }
+#artikel img { }
+
+
+
+  /***********************/ 
+ /* relaterade artiklar */ 
+/***********************/ 
+
+#related_articles { }
+h3#related_articles_text { font-size: 0.85em; }
+ul#related_articles_list { }
+li.related_article { overflow:hidden; }
+.related_article_img { float: left; }
+.related_article_img img { }
+.related_article_img_link { border: none; }
+h3.related_article_titel { font-size: 0.75em; font-weight: bold }
+.related_article_link { }
+.related_article_summary { float: left; }
+.related_article_date { }
