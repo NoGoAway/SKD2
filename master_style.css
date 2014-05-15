@@ -29,23 +29,23 @@ body { }
  /* artikel ingres */
 /******************/ 
 #artikel_intro { overflow:hidden;  }
-h1#artikel_title { }
-#artikel_byline { float:left; }
-#artikel_datum { float:left; }
-#artikel_kategori { }
+h1#artikel_title { margin: 0; padding: 0; }
+#artikel_byline { float:left; font-size: 0.85em;}
+#artikel_datum { float:left; font-size: 0.85em;}
+#artikel_kategori { font-size: 0.85em;}
 
 
   /**************/ 
  /* shares box */ 
 /**************/ 
-#shares { overflow:hidden; border-top: 1dp; border-bottom: 1dp; }
-#shares_text span { font-size: 0.75em; display: block;}
+#shares { overflow:hidden; border-top: 1px solid #333; border-bottom: 1px solid #333; }
+#shares_text { font-size: 0.75em; display: block;}
 #shares_facebook { float: left; }
-.share_facebook_button { border: 1px solid #ccc; background-color: blue; color: white; }
+.share_facebook_button { border: 1px solid #ccc; background-color: blue; color: white; text-decoration: none;}
 #shares_twitter { float: left;}
-.share_twitter_button { border: 1px solid #ccc; background-color: green; color: white; }
+.share_twitter_button { border: 1px solid #ccc; background-color: green; color: white; text-decoration: none;}
 #shares_googleplus { float: left; }
-.share_gplus_button { border: 1px solid #ccc; background-color: red; color: white; }
+.share_gplus_button { border: 1px solid #ccc; background-color: red; color: white; text-decoration: none;}
 
 
 
@@ -53,14 +53,14 @@ h1#artikel_title { }
  /* innehåll */
 /************/ 
 #content { }
-#faktabox { float: right; width: 33%; }
-h2#faktaHeader { font-size: 1em; }
+#faktabox { float: right; width: 40%; margin: 0px; border-left: 1px solid #ccc; margin-left: 0.3em; background-color: #eee;}
+h2#faktaHeader { font-size: 0.85em; background-color: #aaa; color: #fff; padding: 0.3em; padding-left: 0.4em; padding-bottom: 0.1em; margin-top: 0px; margin-left: 0px; }
 #faktaImg { }
 #faktaImg img { }
-#faktaText { }
-#artikel { }
-#artikel p { }
-#artikel img { }
+#faktaText { font-size: 0.85em; padding-left: 0.5em; }
+#artikel { margin-left: 0.3em}
+#artikel p { font-size: 0.85em; }
+#artikel img { float: left; }
 
 
 
@@ -69,13 +69,13 @@ h2#faktaHeader { font-size: 1em; }
 /***********************/ 
 
 #related_articles { }
-h3#related_articles_text { font-size: 0.85em; }
-ul#related_articles_list { }
-li.related_article { overflow:hidden; }
-.related_article_img { float: left; }
+h3#related_articles_text { font-size: 0.65em; }
+ul#related_articles_list { list-style-type: none; padding: 0px; margin: 0px; }
+li.related_article { overflow:hidden; border-bottom: 1px solid #333; margin-top: 0.3em;}
+.related_article_img { float: left; margin-right: 0.3em;}
 .related_article_img img { }
 .related_article_img_link { border: none; }
-h3.related_article_titel { font-size: 0.75em; font-weight: bold }
+h3.related_article_titel { font-size: 0.95em; font-weight: bold, padding: 0; margin-top: 0.2em; }
 .related_article_link { }
-.related_article_summary { float: left; }
-.related_article_date { }
+.related_article_summary { font-size: 0.75em; }
+.related_article_date { font-size: 0.75em;  }
