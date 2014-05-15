@@ -105,8 +105,30 @@
         
         
         
-        <div id="shares">   <!--  begin shares-->
-            <!-- see above :) -->
+        <div id="shares"> <!-- begin shares -->
+            <!-- http://www.sitepoint.com/social-media-button-links/ -->
+            <!-- URL encode for android  http://developer.android.com/reference/java/net/URLEncoder.html
+                 & http://stackoverflow.com/questions/3286067/url-encoding-in-android -->
+            
+            <span id="shares_text">dela</span>
+            
+            <div id="shares_facebook"> <!-- grafiken ligger i css'et // FB-f-Logo__blue_50.png -->
+                <a class="share_facebook_button" href="https://www.facebook.com/sharer/sharer.php?u= (URLENCODED LINK) &t= (TITEL)">facebook</a>
+            </div>
+            
+            
+            <div id="shares_twitter"> <!-- grafiken ligger i css'et // bird_blue_48.png -->
+                <a class="share_twitter_button" href="https://twitter.com/intent/tweet?url= (URLENCODED LINK) &text= (TITEL) &via=Skanskanse&hashtags= (CATEGORY+extra) ">twitter</a>
+            </div>
+            <!-- https://dev.twitter.com/docs/intents  -->
+            <!-- "Hashtags" = <item><CATEGORY>, om vi kan hämta "EUROVISION" från descriptions taggan <span class="dateline site-color">EUROVISION.</span> lägg till också //
+            "via" = skånskans twitter konto  //  "url" = urlencoded <item><LINK>  // "text" = <item><TITEL> (properly UTF-8 & percent-encoded) -->
+            
+            
+            <div id="shares_googleplus"> <!-- grafiken ligger i css'et // gplus_button_30x21.png -->
+                <a class="share_gplus_button" href="https://plus.google.com/share?url= (URLENCODED LINK)">Google Plus</a>
+            </div>
+            
         </div> <!-- end shares -->
         
         
