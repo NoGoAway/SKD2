@@ -23,7 +23,8 @@ font-family: 'Droid Serif', Georgia, Times, 'Times New Roman', serif;
 */
 /*p, a, #topmedia, #annons, #artikel_intro {font-family: 'Old Standard TT', Georgia, serif; line-height: 1.15em;}*/
 
-a {text-decoration: none;}
+a {text-decoration: none;
+color: #3388CC;}
 
   /**********/ 
  /* annons */ 
@@ -50,19 +51,22 @@ a {text-decoration: none;}
   /******************/ 
  /* artikel ingres */
 /******************/ 
-#artikel_intro { overflow:hidden; padding: 0 .2em 0.2em .2em; float: left; width: 55%;}
-h1#artikel_title { font-size: 1.5em; margin: 4px 0 9px 0; line-height: 1.1em; padding: 2px 0 0 ;
+#artikel_intro { overflow:hidden; padding: 0 .2em .2em .2em; float: left; width: 190px;}
+h1#artikel_title { font-size: 1.5em; margin: 4px 0 4px 0; line-height: 1.1em; padding: 2px .4em .6em .4em ;
 font-family: 'Droid Serif', Georgia, Times, 'Times New Roman', serif; border-bottom: 1px solid #333; }
-#artikel_byline { float:left; font-size: 0.65em; margin-right: 10px;}
-#artikel_datum { float:left;  font-size: 0.65em; margin-right: 10px;}
-#artikel_kategori { float:left; font-size: 0.65em;}
+#artikel_byline { font-size: 0.65em; margin: 0  0 0 .6em; padding: 0;}
+#artikel_datum { font-size: 0.65em; margin: 0  0 0 .6em; padding: 0;}
+#artikel_kategori { font-size: 0.65em; margin: 0  0 0 .6em; padding: 0; font-weight: 700;}
+
+/* media query */
+
 
 
 
   /**************/ 
  /* shares box */ 
 /**************/ 
-#shares { overflow:hidden;  margin: 0 0.2em; padding-bottom: 3px; width: 40%; border: 0;}
+#shares { overflow:hidden;  margin: 0 0.2em; padding-bottom: 3px; width: 110px; border: 0; }
 #shares_text { font-size: 0.75em; display: block;}
 #shares_facebook {  }
 .share_facebook_button { float: left; padding: 0; background: url("facebook.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -82,20 +86,19 @@ font-family: 'Droid Serif', Georgia, Times, 'Times New Roman', serif; border-bot
   /************/
  /* innehåll */
 /************/ 
-#content { border-top: 1px solid #ccc; }
-#faktabox { float: right; width: 40%; margin: 0px; border-left: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-left: 0.4em;
-background-color: #eee; padding: 0; margin-top: 20px;}
-#faktabutton {border: 1px solid #ccc;}
+#content { border-top: 1px solid #ccc; clear: both;}
+#faktabox { float: right; max-width: 40%; margin: 0px 0 0 .4em; background-color: #eee; padding: 0; margin-top: 20px;}
+/*#faktabutton {border: 1px solid #ccc;}*/
 h4#faktaBoxHeader {font-size: 0.55em; color: #fff; background-color: #000; margin: 0; padding: 5px;}
-h4#faktaHeader { font-size: 0.55em; background-color: #444; color: #fff; padding: .4em; margin-top: 0px; margin-left: 0px; }
+h2#faktaHeader { font-size: 0.75em; background-color: #444; color: #fff; padding: 0; margin-top: 0px; margin-left: 0px; text-align: right }
 #faktaImg { }
 #faktaImg img { }
-#faktaText { font-size: 0.6em; padding-left: 0.5em; }
-#faktaText p br {margin-bottom: .5em;}
-#artikel { margin-left: 0.3em}
+#faktaText {}
+#faktaText p { font-size: 0.75em; padding: 0; margin:0 .5em 1em .5em;}
+#artikel { margin-left: 0.6em}
 #artikel p { font-size: 0.85em; }
 #artikel img { float: left; }
-#faktaText pre {font-weight: bold; display: block; font-size:2em;}
+#faktaText pre {font-weight: bold; display: block; font-size: 2em;}
 #artikel p strong, .dateline, .Fet {color: #000; font-weight: 800;}
 
 #bottomclear {clear: both; float: none;}
@@ -118,105 +121,30 @@ h3.related_article_titel { font-size: 0.95em; font-weight: bold; padding: 0; mar
 
 
 
-/* NUKE jquery mobile css */
 
-.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
-    background-color: #fff;
-    border-color: #fff;
-    border-width: 0;
-    color: #333333;
-    text-shadow: 0 1px 0 #F3F3F3;
-}
 
-input, select, textarea, button, .ui-btn {
-    font-family: inherit;
-    font-size: 1em;
-    line-height: 1em;
-}
-
-.ui-content {
-    border-width: 0;
-    overflow-x: hidden;
-    overflow-y: visible;
+@media screen and (min-width: 600px) {
+  [data-role="page"] {
+    margin: 0 auto;
     padding: 0;
-}
-
-
-/**/
-    .open a, .open a:hover {  
-        padding: 0;
-        color: #000;
-    }  
-    .open {   
-        color: #000;
-        float: right;
-        padding: 0;
-        
-    }  
- 
-    .open.rightright {  
-    }  
-    .panel {  
-        background: #ddd;  
-        color: #ECF0F1;  
-    }  
-    .panel a {  
-        color: #000 !important;  
-        display: block;  
-        text-decoration: none;  
-        border-bottom: 0px solid #000;  
-        border-top: 0px solid #000;  
-        position: relative;  
-        font-weight: 400;  
-    }  
-    .panel ul {  
-        padding: 0;  
-        margin: 0;  
-        list-style: none;  
-        border-bottom: 0px solid #95A5A6;  
-    }  
-    .panel .avatar {  
-        position: absolute;  
-        top: 8px;  
-        left: 20px;  
-    }  
-    .ui-panel-inner {  
-        padding: 0;  
-    }  
-    .panel a:hover {  
-        background-color: #95A5A6;  
-    }  
-    .panel.rightright a:before {  
-        content: '';  
-        display: block;  
-        right: 20px;  
-    }  
-.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
-    color: #000;
-    font-weight: 700;
-}
-
-.ui-btn {
-    cursor: pointer;
-    font-size: 12px;
-    text-align: left;
-    white-space: normal;
-    -moz-user-select: none;
-    font-size: 16px;
-    margin: 0.5em 0;
-    overflow: visible;
-    padding: 0.7em 1em;
-    position: inherit;
-    float: right;
-    width: 30%;
-}
-
-.ui-page-theme-a .ui-btn,
-html .ui-bar-a .ui-btn,
-html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
-    background-color: #F6F6F6;
-    border-color: #DDDDDD;
-    border-width: 0;
-    color: #333333;
-    text-shadow: 0 1px 0 #F3F3F3;
+    background-color: #fff;
+    width: 600px;
+  }
+  
+  #content {clear: both; display: block;}
+  #shares { overflow:hidden;  margin: 0 0 0 0.5em; padding-bottom: 3px; width: 110px; }
+  #artikel_intro { border-top: 1px solid #666; width: 100%; padding-top:6px;}
+  
+  h1#artikel_title { font-size: 1.5em; margin: 4px 0 4px 0; line-height: 1.1em; padding: 2px .4em .6em .4em ;
+font-family: 'Droid Serif', Georgia, Times, 'Times New Roman', serif; border-bottom: 1px solid #333; }
+  
+  h1#artikel_title {
+    width: 450px;
+    float: left;
+    margin: 8px 0 4px 0;
+    padding: 2px .4em .3em .4em ;
+    border: 0;
+    
+  }
+  
 }
