@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- https://rawgithub.com/ linking from github -->    
+<!-- css och javascript lagras lokalt -->   
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css"> <!-- NEW INSERT -->	
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300|PT+Serif+Caption|Droid+Sans:700|Droid+Serif:700' rel='stylesheet' type='text/css'> <!-- NEW INSERT -->	
+<link href="master_style.css" media="all" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> <!-- NEW INSERT -->	
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> <!-- NEW INSERT -->	
+<script src="https://rawgithub.com/NoGoAway/SKD2/html_web/skd_js.js" type="text/javascript"></script>
+
+<title></title> <!-- <item><title>-->
+
+</head>
+
+<body>
+    
+    <div data-role="page"> <!-- NEW INSERT !!!!!!   -->
+    
+        <div id="nav"></div>    <!-- for later, kanske -->
+        
+        
+        
+	<div id="annons"> <!-- begin annons -->
+            <div id="annons_disclosure">annons</div>
+            <div id="annons_box"></div>                 <!-- anton annons script goes here -->
+        </div> <!-- end annons -->
+        
+        
+        
+        <div id="top_media"> <!-- begin topmedia -->
+            
+            <div id="top_media_img"> <!-- första bilden -->
+                <div id="top_media_img_box"><img src=" () "/></div>      <!-- <item><enclosure url""> urlen ska urldecodes (tror jag) -->
+                <div id="top_media_img_byline"></div>   <!-- -->
+            </div>
+            
+            <div id="top_media_video"> <!-- video om det finns -->
+                <div id="top_media_video_box"></div>    <!-- <item><SKDxml:videoBox> vi antar att byline  finns i video-->
+            </div>
+            
+        </div> <!-- end topmedia -->
+        
+	
+        <h1 id="artikel_title">Det stora balladslaget  om en banan</h1>        <!-- <item><title> --> <!-- NEW INSERT   !!!!!!    -->
+	
+        
+        <div id="artikel_intro"> <!-- begin artikel intro -->
+            
+            <!-- h1 id="artikel_title"></h1>        <!-- <item><title> --> <!-- NEW REMOVED  !!!!!!! flyttas längre upp  -->
+            <div id="artikel_byline"></div>     <!-- <item><author>  // Kan vi ta bort email? -->
+            <div id="artikel_datum"></div>      <!-- <item><pubDate> // Den kanske ska ändras till 2014/04/09 / tidspunkt inte så viktigt?? -->
+            <div id="artikel_kategori"></div>   <!-- <item><category> -->
+            
+        </div> <!-- end artikel intro -->
+        
+        
+        
+        <div id="shares"> <!-- begin shares -->    
+            <!-- http://www.sitepoint.com/social-media-button-links/ -->
+            <!-- URL encode for android  http://developer.android.com/reference/java/net/URLEncoder.html
+                 & http://stackoverflow.com/questions/3286067/url-encoding-in-android -->
+                        
+            <div id="shares_facebook"> <!-- grafiken ligger i css'et // FB-f-Logo__blue_50.png -->
+                <a class="share_facebook_button" href="https://www.facebook.com/sharer/sharer.php?u= (URLENCODED LINK) &t= (TITEL)"></a> <!-- NEW INSERT -->	
+            </div>
+            
+            
+            <div id="shares_twitter"> <!-- grafiken ligger i css'et // bird_blue_48.png -->
+                <a class="share_twitter_button" href="https://twitter.com/intent/tweet?url= (URLENCODED LINK) &text= (TITEL) &via=Skanskanse&hashtags= (CATEGORY+extra) "></a> <!-- NEW INSERT -->	
+            </div>
+            <!-- https://dev.twitter.com/docs/intents  -->
+            <!-- "Hashtags" = <item><CATEGORY>, om vi kan hämta "EUROVISION" från descriptions taggan <span class="dateline site-color">EUROVISION.</span> lägg till också //
+            "via" = skånskans twitter konto  //  "url" = urlencoded <item><LINK>  // "text" = <item><TITEL> (properly UTF-8 & percent-encoded) -->
+            
+            
+            <div id="shares_googleplus"> <!-- grafiken ligger i css'et // gplus_button_30x21.png -->
+                <a class="share_gplus_button" href="https://plus.google.com/share?url= (URLENCODED LINK)"></a> <!-- NEW INSERT -->	
+            </div>
+            
+        </div> <!-- end shares -->
+        
+        
+        
+        <div id="content"  data-role="content">   <!-- begin content -->   <!-- NEW INSERT !!!!!!! -->
+            
+	    <span id="faktabutton" class="open ui-btn right"><a href="#panel-02">&Ouml;ppna faktabox: <br />(faktaHeading)</a></span> <!-- <item><SKDxml:faktaHeading> -->   <!-- NEW INSERT -->
+	    
+            <!-- div id="faktabox">             <!-- <item><SKDxml:faktaBox> -->   <!-- NEW REMOVED  flyttas längre ner  -->
+                <!-- h2 id="faktaHeader"></h2>  <!-- <item><SKDxml:faktaHeading> -->    <!-- NEW REMOVED flyttas längre ner  -->
+                <!-- div id="faktaImg"></div>   <!-- <item><SKDxml:faktaImg> Kanske vi får med bylines??? Kanske för pilligt -->    <!-- NEW REMOVED -->
+                <!-- div id="faktaText"></div>  <!-- <item><SKDxml:faktaText> -->    <!-- NEW REMOVED flyttas längre ner  -->
+            <!-- /div -->
+            
+            <div id="artikel"></div>        <!-- <item><description> -->
+            
+        </div> <!-- end content -->
+        
+	
+        
+        <!-- div id="shares"> <!-- begin shares -->  <!-- REMOVED !!!!!!!!!!!!!!!!  -->
+            <!-- http://www.sitepoint.com/social-media-button-links/ -->
+            <!-- URL encode for android  http://developer.android.com/reference/java/net/URLEncoder.html
+                 & http://stackoverflow.com/questions/3286067/url-encoding-in-android -->
+            
+            <!-- span id="shares_text">dela</span>  <!-- REMOVED !!!!!!!!!!!!!!!!  -->
+            
+            <!-- div id="shares_facebook"> <!-- grafiken ligger i css'et // FB-f-Logo__blue_50.png -->
+                <!-- a class="share_facebook_button" href="https://www.facebook.com/sharer/sharer.php?u= (URLENCODED LINK) &t= (TITEL)"></a> <!-- NEW INSERT -->	
+            <!-- /div>
+            
+            
+            <div id="shares_twitter"> <!-- grafiken ligger i css'et // bird_blue_48.png -->
+                <!-- a class="share_twitter_button" href="https://twitter.com/intent/tweet?url= (URLENCODED LINK) &text= (TITEL) &via=Skanskanse&hashtags= (CATEGORY+extra) "></a> <!-- NEW INSERT -->	
+            <!-- /div>
+            <!-- https://dev.twitter.com/docs/intents  -->
+            <!-- "Hashtags" = <item><CATEGORY>, om vi kan hämta "EUROVISION" från descriptions taggan <span class="dateline site-color">EUROVISION.</span> lägg till också //
+            "via" = skånskans twitter konto  //  "url" = urlencoded <item><LINK>  // "text" = <item><TITEL> (properly UTF-8 & percent-encoded) -->
+            
+            
+            <!-- div id="shares_googleplus"> <!-- grafiken ligger i css'et // gplus_button_30x21.png -->
+                <!-- a class="share_gplus_button" href="https://plus.google.com/share?url= (URLENCODED LINK)"></a> <!-- NEW INSERT -->	
+            <!-- /div -->
+            
+        <!-- /div> <!-- end shares -->
+        
+        
+        
+        <div id="related_articles"> <!--  if connectionItems exist create related articles list -->
+            
+            <h3 id="related_articles_text">Relaterade Artikler</h3>     <!-- hård kodad -->
+            
+            <ul id="related_articles_list"> <!-- begin related article List -->
+                
+                <li class="related_article">  <!-- begin related article -->
+                    
+                    <div class="related_article_img">       <!-- <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedItemLink>  // <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedImage> -->
+                        <a class="related_article_img_link"href=" (SKDxml:connectedItemLink) + &template=rssarticlefull&mime=xml">  </a> <!-- länk är <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedImage> -->
+                    </div>
+                            
+                    <h3 class="related_article_titel">      <!-- <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedItemLink> // <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedItemHeading> -->
+                        <a class="related_article_link" href=" (SKDxml:connectedItemLink) + &template=rssarticlefull&mime=xml">  </a>  <!-- länk är <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedItemHeading> -->
+                    </h3>
+                    
+                    <div class="related_article_summary"></div>     <!-- <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedItemSummary> -->
+                    
+                    <div class="related_article_date"></div>        <!-- <item><SKDxml:connectionItems><SKDxml:connectedItem><SKDxml:connectedItemHeading connectedItemDate="20140506"> -->
+                    
+                </li> <!-- end related articel -->
+            
+            </ul> <!-- end related article List-->
+            
+        </div>
+	
+	
+	<div class="panel right" data-role="panel" data-position="right" data-display="push" data-position-fixed="true" id="panel-02">  <!-- NEW INSERT -->
+	    <pre>FAKTABOX</pre>
+	    <pre>faktaHeader</pre> <!-- <item><SKDxml:faktaHeading> -->    <!-- NEW INSERT -->
+
+            <div id="faktaText"></div>  <!-- <item><SKDxml:faktaText> -->    <!-- NEW INSERT  -->
+	    <div id="closebuttons"><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline">St&auml;ng</a></div> <!-- NEW INSERT  -->
+	
+	</div> <!-- NEW INSERT  -->
+	
+	
+
+	
+    </div>  <!-- NEW INSERT : end of "page"-->
+    
+    
+</body>
+</html>
